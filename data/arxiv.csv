@@ -1,0 +1,180 @@
+arxiv_id,survey,survey_abbr,model,model_abbr,dataset,dataset_abbr,submission,submission_year,page,repo,backbone_tags,approach_tags
+2508.05162,0,,1,X-MoGen,1,UniMo4D,,,,,"Transformer, Diffusion",Graph
+2508.02605,0,,1,ReMoMask,0,,,,https://aigeeksgroup.github.io/ReMoMask/,https://github.com/AIGeeksGroup/ReMoMask,"VQ-VAE, Transformer",Retrieval
+2507.19850,0,,0,,1,FineMotion,,,,https://github.com/BizhuWu/FineMotion,,
+2507.09122,0,,1,MoMask++,1,SnapMoGen,,,https://snap-research.github.io/SnapMoGen/,https://github.com/snap-research/SnapMoGen,"VQ-VAE, Transformer",
+2507.07095,0,,1,GotoZero,1,MotionMillion,ICCV,2025,https://vankouf.github.io/MotionMillion/,https://github.com/VankouF/MotionMillion-Codes,"T5, VQ-VAE, Transformer",
+2507.06590,0,,1,MOST,0,,,,,,Diffusion,
+2506.24086,0,,1,MotionGPT3,0,,,,https://motiongpt3.github.io/,https://github.com/OpenMotionLab/MotionGPT3,LLM,
+2506.21912,0,,1,AttrMoGen,1,HumanAttr,,,,,"VQ-VAE, CLIP, Transformer",Attribute
+2506.10353,0,,1,Motion-R1,0,,,,https://motion-r1.github.io/,https://github.com/GigaAI-Research/Motion-R1,LLM,"GRPO, RL"
+2506.05952,0,,1,MOGO,0,,,,,,"VQ-VAE, Transformer",
+2506.02452,0,,1,ANT,0,,,,,https://github.com/CCSCovenant/ANT,"UNet, Transformer",
+2506.00043,0,,1,PHYLOMAN,1,GBC-100K,,,,,LLM,
+2505.19377,0,,1,ACMDM,0,,,,https://neu-vi.github.io/ACMDM/,https://github.com/neu-vi/ACMDM,CLIP,RoPE
+2505.11013,0,,1,MoMADiff,0,,MM,2025,,https://github.com/zzysteve/MoMADiff,"VAE, Diffusion",Multi-Task
+2505.04974,0,,1,ReAlign,0,,,,https://wengwanjiang.github.io/ReAlign-page/,,Diffusion,
+2505.01425,0,,1,GENMO,0,,,,https://research.nvidia.com/labs/dair/genmo/,,Transformer,"Multi-Task, RoPE"
+2505.00998,0,,1,DSDFM,0,,CVPR,2025,,,"Transformer, GRU",Score-based
+2504.12540,0,,1,UniPhys,0,,ICCV,2025,https://wuyan01.github.io/uniphys-project/,,"Diffusion, Transformer",Physical
+2504.03639,0,,1,Shape-Move,0,,CVPR,2025,https://shape-move.github.io/,https://github.com/shape-move/shape-move-public,"VQ-VAE, LLM",Attribute
+2504.02478,0,,1,MG-MotionLLM,0,,CVPR,2025,,https://github.com/CVI-SZU/MG-MotionLLM,,Finegrained
+2504.01338,0,,1,FlowMotion,0,,,,,,"CLIP, Transformer, Flow Matching",Jerk
+2504.01019,0,,1,MixerMDM,0,,CVPR,2025,https://pabloruizponce.com/papers/MixerMDM,https://github.com/pabloruizponce/MixerMDM,"Transformer, Diffusion",Diversity
+2503.20724,0,,1,MotionReFit,1,STANCE,CVPR,2025,https://awfuact.github.io/motionrefit/,https://github.com/emptybulebox1/motionRefit/,"Diffusion, Transformer, CLIP",Editing
+2503.19557,0,,1,LoRA-MDM,0,,,,https://haimsaw.github.io/LoRA-MDM/,https://github.com/haimsaw/LoRA-MDM,Diffusion,"Trajectory, Diversity"
+2503.18674,0,,1,HMU,0,,,,https://www.pinlab.org/hmu,https://github.com/edodema/human-motion-unlearning,VQ-VAE,
+2503.18211,0,,1,SimMotionEdit,0,,CVPR,2025,https://ideas.cs.purdue.edu/research/projects/sim-motion-edit/,https://github.com/lzhyu/SimMotionEdit,"CLIP, Diffusion, Transformer","Multi-Task, Editing"
+2503.15451,0,,1,MotionStreamer,0,,ICCV,2025,https://zju3dv.github.io/MotionStreamer/,https://github.com/zju3dv/MotionStreamer/,"Diffusion, Transformer",
+2503.14919,0,,1,GenM3,0,,,,,,"VQ-VAE, CLIP, Transformer",Pre-Train
+2503.14637,0,,1,Kinesis,0,,,,,https://github.com/amathislab/Kinesis,,"Imitation Learning, RL"
+2503.13859,0,,1,sMDM,0,,,,,,Diffusion,
+2503.13836,0,,1,SALAD,0,,CVPR,2025,https://seokhyeonhong.github.io/projects/salad/,https://github.com/seokhyeonhong/salad,"CLIP, VAE","Finegrained, Editing"
+2503.13300,0,,1,PMG,0,,TCSVT,2025,,https://github.com/qinghuannn/PMG,Transformer,
+2503.07390,0,,1,PersonaBooth,1,PerMo,CVPR,2025,https://boeun-kim.github.io/page-PersonaBooth/,https://github.com/Boeun-Kim/PersonaBooth,"CLIP, Diffusion, Transformer",
+2503.06955,0,,1,MotionAnything,1,TMD,,,https://steve-zeyu-zhang.github.io/MotionAnything/,,"VQ-VAE, CLIP, Transformer",
+2503.06151,0,,1,BioVAE,0,,,,,,UNet,Physical
+2503.06119,0,,1,MoMug,0,,,,,,"Diffusion, Transformer, LLM",LoRA
+2502.05534,0,,1,Fg-T2M++,0,,IJCV,2025,,,"LLM, Diffusion",Graph
+2502.02358,0,,1,MotionLab,0,,ICCV,2025,https://diouo.github.io/motionlab.github.io/,https://github.com/Diouo/MotionLab,Transformer,"Editing, Multi-Task"
+2502.02063,0,,1,CASIM,0,,,,https://cjerry1243.github.io/casim_t2m/,https://github.com/cjerry1243/casim_t2m,"Transformer, Diffusion",Component
+2501.19083,0,,1,MotionPCM,0,,,,,,"Transformer, VAE, Diffusion",Efficient
+2501.18232,0,,1,Free-T2M,0,,,,,,,"Component, Frequency"
+2501.16778,0,,1,FlexMotion,0,,,,https://openreview.net/forum?id=7652tHbbVE,,Diffusion,"Physical, Efficient, Finegrained"
+2501.16551,0,,1,PackDiT,0,,,,,,"Diffusion, Transformer",Multi-Task
+2501.05098,0,,0,,1,Motion-X++,,,,,,
+2501.01449,0,,1,LS-GAN,0,,WACV,2025,,https://github.com/AmballaAvinash/motion-latent-diffusion,GAN,Efficient
+2412.14706,0,,1,EnergyMoGen,0,,CVPR,2025,https://jiro-zhang.github.io/EnergyMoGen/,,"VAE, Diffusion","Energy-based, Diversity"
+2412.14559,0,,1,ScaMo,0,,CVPR,2025,https://shunlinlu.github.io/ScaMo/,https://github.com/shunlinlu/ScaMo_code,"VQ-VAE, Transformer",
+2412.11193,0,,1,Light-T2M,0,,AAAI,2025,,https://github.com/qinghuannn/light-t2m,Mamba,Efficient
+2412.10523,0,,1,LoM,0,,,,https://languageofmotion.github.io/,https://github.com/Juzezhang/language_of_motion,VQ-VAE,Multi-Task
+2412.07320,0,,1,CoMA,0,,,,https://gabrie-l.github.io/coma-page/,https://github.com/Siwensun/CoMA,"LLM, VQ-VAE, CLIP, Transformer",Editing
+2412.05277,0,,0,,1,BlindWays,NeurIPS,2024,https://blindways.github.io/,,,
+2412.05095,0,,1,SoPo,0,,,,https://xiaofeng-tan.github.io/projects/SoPo/,https://github.com/Xiaofeng-Tan/SoPO,,"RL, DPO"
+2412.04343,0,,1,RMD,0,,,,,,"Diffusion, LLM",Retrieval
+2412.00112,0,,1,BiPO,0,,,,,,"CLIP, Transformer","Finegrained, Editing, Multi-Task"
+2411.19786,0,,1,MoTE,0,,,,,,"Diffusion, CLIP, Transformer",
+2411.17532,0,,1,FTMoMamba,0,,,,,,"Mamba, Diffusion","Frequency, Finegrained"
+2411.17335,0,,1,VersatileMotion,0,,,,,,"LLM, VQ-VAE, Flow Matching, Transformer",
+2411.16575,0,,1,MARDM,0,,CVPR,2025,https://neu-vi.github.io/MARDM/,https://github.com/neu-vi/MARDM,"CLIP, Diffusion, Transformer",
+2411.14951,0,,1,Morph,0,,ICCV,2025,,,,"Physical, RL, Component"
+2411.06481,0,,1,KMM,0,,,,https://steve-zeyu-zhang.github.io/KMM/,,"VQ-VAE, Mamba, CLIP",
+2410.21747,0,,1,MotionGPT-2,0,,,,,,"LLM, VQ-VAE","Multi-Task, LoRA"
+2410.18977,0,,1,MotionCLR,0,,,,https://lhchen.top/MotionCLR/,,Transformer,"Finegrained, Editing"
+2410.14508,0,,1,LEAD,0,,,,,,VQ-VAE,Component
+2410.10780,0,,1,MaskControl,0,,ICCV,2025,https://www.ekkasit.com/ControlMM-page/,https://github.com/exitudio/MaskControl/,Transformer,Trajectory
+2410.07296,0,,1,ReinDiffuse,0,,WACV,2025,https://reindiffuse.github.io/,,Diffusion,"RL, Physical"
+2410.07093,0,,1,LaMP,0,,ICLR,2025,https://aigc3d.github.io/LaMP/,https://github.com/gentlefress/LaMP,Transformer,Pre-Train
+2410.06513,0,,1,MotionRL,0,,,,,,Transformer,"PPO, RL"
+2410.05628,0,,1,VIM,1,Inter-MT2,ICCV,2025,https://vim-motion-language.github.io/,,LLM,Multi-Task
+2410.05260,0,,1,DART,0,,ICLR,2025,https://zkf1997.github.io/DART/,https://github.com/zkf1997/DART,"CLIP, Transformer, VAE, Diffusion","Multi-Task, Efficient"
+2410.04534,0,,1,UniMuMo,0,,,,https://hanyangclarence.github.io/unimumo_demo/,https://github.com/hanyangclarence/UniMuMo,Transformer,Multi-Task
+2410.03311,0,,1,Being-M0,1,MotionLib,ICML,2025,https://beingbeyond.github.io/Being-M0/,https://github.com/BeingBeyond/Being-M0,"VQ-VAE, LLM",
+2409.19686,0,,1,MMDM,0,,,,,,Diffusion,
+2409.18127,0,,1,EgoLM,0,,CVPR,2025,https://hongfz16.github.io/projects/EgoLM,,"LLM, VAE",Multi-Task
+2409.17686,0,,1,MoGenTS,0,,NeurIPS,2024,https://aigc3d.github.io/mogents/,https://github.com/weihaosky/mogents,VQ-VAE,Editing
+2409.15904,0,,1,UniMotion,0,,3DV,2025,https://coral79.github.io/uni-motion/,https://github.com/Coral79/Unimotion,"CLIP, Transformer","Editing, Finegrained, Multi-Task"
+2409.14393,0,,1,MaskedMimic,0,,SIGGRAPH Asia,2024,https://xbpeng.github.io/projects/MaskedMimic/index.html,https://github.com/NVlabs/ProtoMotions,,"Multi-Task, Physical, RL"
+2409.13251,0,,1,T2M-X,0,,,,,,"VQ-VAE, Transformer",
+2409.12140,0,,1,MoRAG,0,,WACV,2025,https://motion-rag.github.io/,https://github.com/Motion-RAG/MoRAG,"LLM, Diffusion",
+2409.10847,0,,1,BAD,0,,,,https://rohollahhs.github.io/BAD-page/,https://github.com/rohollahhs/bad/,"CLIP, Transformer",
+2409.01522,0,,1,LaMoG,0,,,,https://plyfager.github.io/LaMoG/,,,"Component, Multi-Task"
+2408.03302,0,,1,TextIM,0,,EUROGRAPHICS,2025,,,Transformer,Finegrained
+2408.00712,0,,1,TMED,1,MotionFix,SIGGRAPH Asia,2024,https://motionfix.is.tue.mpg.de/,https://github.com/atnikos/motionfix,"CLIP, Diffusion, Transformer",Editing
+2408.00352,0,,1,ALERT-Motion,0,,AAAI,2025,,,,Attack
+2407.21136,0,,1,MotionCraft,0,,AAAI,2025,https://cure-lab.github.io/MotionCraft/,https://github.com/cure-lab/MotionCraft,"Diffusion, Transformer",Multi-Task
+2407.14502,0,,1,M2D2M,0,,ECCV,2024,,,"VQ-VAE, Transformer",Diversity
+2407.12783,0,,1,SMooDi,0,,ECCV,2024,https://neu-vi.github.io/SMooDi/,https://github.com/neu-vi/SMooDi,Diffusion,Style
+2407.10528,0,,1,GuidedMotion,0,,,,https://jpthu17.github.io/GuidedMotion-project/,,"Diffusion, Transformer","Finegrained, Graph"
+2407.10481,0,,1,SuperPADL,0,,,,,,,"RL, Physical"
+2407.10061,0,,1,InfiniMotion,0,,,,,,"VQ-VAE, Transformer, Mamba",
+2407.08443,0,,1,InfiniteMotion,1,HumanML3D-Extend,,,https://shuochengzhai.github.io/Infinite-motion.github.io/,,,Editing
+2407.02272,0,,0,,1,MotionPercept,ICLR,2025,https://motioncritic.github.io/,https://github.com/ou524u/MotionCritic,,
+2406.01867,0,,1,MoLA,0,,CVPR Workshop,2025,https://kengouchida-sony.github.io/MoLA-demo/,https://github.com/sony/MoLA,"VAE, GAN","Trajectory, Multi-Task"
+2406.00636,0,,1,T2LM,0,,CVPR Workshop,2024,,,"VQ-VAE, Transformer",
+2405.19283,0,,1,ProgMoGen,0,,CVPR,2024,https://hanchaoliu.github.io/Prog-MoGen/,https://github.com/HanchaoLiu/ProgMoGen,,"Finegrained, Trajectory, MultiTask"
+2405.17013,0,,1,Motion-Agent,0,,ICLR,2025,https://knoxzhao.github.io/Motion-Agent/,https://github.com/szqwu/Motion-Agent,LLM,"LoRA, Editing"
+2405.16909,0,,1,TMR++,0,,CVPR Workshop,2024,https://imagine.enpc.fr/~leore.bensabath/TMR++/,https://github.com/leorebensabath/TMRPlusPlus,,Retrieval
+2405.16273,0,,1,M3GPT,0,,NeurIPS,2024,https://luomingshuang.github.io/M3GPT/,https://github.com/luomingshuang/M3GPT,LLM,Multi-Task
+2405.15541,0,,1,InstructMotion,0,,,,,,"CLIP, Transformer, VQ-VAE",RL
+2405.06778,0,,1,SMD,0,,,,,,Diffusion,"Frequency, Attribute"
+2405.05691,0,,1,StableMoFusion,0,,MM,2024,https://h-y1heng.github.io/StableMoFusion-page/,https://github.com/Linketic/StableMoFusion,"UNet, Diffusion, Transformer",
+2405.04771,0,,1,MotionPatches,0,,CVPR,2024,https://yu1ut.com/MotionPatches-HP/,https://github.com/line/MotionPatches,Transformer,Retrieval
+2405.03803,0,,1,MoDiPO,1,PaM,,,,,Diffusion,Preference
+2405.03485,0,,1,LGTM,0,,SIGGRAPH,2024,,https://github.com/L-Sun/LGTM,Transformer,Finegrained
+2405.02791,0,,1,MLCT,0,,,,,,Diffusion,Score-based
+2405.01461,0,,1,SATO,0,,MM,2024,https://sato-team.github.io/Stable-Text-to-Motion-Framework/,https://github.com/sato-team/Stable-Text-to-Motion-Framework,"CLIP, Transformer",
+2404.19759,0,,1,MotionLCM,0,,ECCV,2024,https://dai-wenxun.github.io/MotionLCM-page/,https://github.com/Dai-Wenxun/MotionLCM,,"Trajectory, Efficient"
+2404.14745,0,,1,TAAT,1,HumanML3D++,ICCV,2025,,,"LLM, Transformer, VQ-VAE",LoRA
+2404.12886,0,,1,MCM,0,,,,,,Transformer,Multi-Task
+2404.09445,0,,1,InstructMotion,0,,CVPR Workshop,2024,,https://github.com/THU-LYJ-Lab/InstructMotion,,"Preference, RL"
+2404.01700,0,,1,MotionChain,0,,,,,,LLM,
+2404.01284,0,,1,LMM,1,MotionVerse,,,https://mingyuan-zhang.github.io/projects/LMM.html,https://github.com/mingyuan-zhang/LMM,"Diffusion, Transformer",Multi-Task
+2403.19435,0,,1,BAMM,0,,ECCV,2024,https://www.ekkasit.com/BAMM-page/,https://github.com/exitudio/BAMM/,"VQ-VAE, CLIP, Transformer",
+2403.18512,0,,1,ParCo,0,,ECCV,2024,,https://github.com/qrzou/ParCo,"VQ-VAE, Transformer",Finegrained
+2403.15709,0,,1,CATMO,1,RICH-CAT,,,https://xymsh.github.io/RICH-CAT/,,"VQ-VAE, Transformer",
+2403.13900,0,,1,CoMo,0,,ECCV,2024,https://yh2371.github.io/como/,https://github.com/yh2371/CoMo,"LLM, CLIP, Transformer","Finegrained, Editing"
+2403.13518,0,,0,,1,FineHumanML3D,LREC-COLING,2024,,https://github.com/KunhangL/finemotiondiffuse,,
+2403.12835,0,,1,AnySkill,0,,CVPR,2024,https://anyskill.github.io/,https://github.com/jiemingcui/anyskill,CLIP,"Physical, Open-Vocabulary, Imitation Learning, Reward"
+2403.07487,0,,1,MotionMamba,0,,ECCV,2024,https://steve-zeyu-zhang.github.io/MotionMamba/,,Mamba,
+2403.02905,0,,1,MMoFusion,0,,,,https://mmofusion.github.io/,https://github.com/wangsen99/MMoFusion,Transformer,Multi-Task
+2402.15509,0,,1,FlowMDM,0,,CVPR,2024,https://barquerogerman.github.io/FlowMDM/,https://github.com/BarqueroGerman/FlowMDM,Transformer,Jerk
+2401.11115,0,,1,MotionMix,0,,AAAI,2024,https://nhathoang2002.github.io/MotionMix-page/,https://github.com/NhatHoang2002/MotionMix,Diffusion,
+2401.08559,0,,1,STMC,0,,CVPR Workshop,2024,https://mathis.petrovich.fr/stmc/,https://github.com/nv-tlabs/stmc,Diffusion,Finegrained
+2401.02142,0,,1,GUESS,0,,TVCG,2024,,https://github.com/Xuehao-Gao/GUESS,"CLIP, Transformer, Diffusion",Diversity
+2312.17135,0,,1,InsActor,0,,NeurIPS,2023,https://jiawei-ren.github.io/projects/insactor/,https://github.com/jiawei-ren/insactor,Diffusion,"Trajectory, Physical"
+2312.15004,0,,1,FineMoGen,1,HuMMan-MoGen,NeurIPS,2023,https://mingyuan-zhang.github.io/projects/FineMoGen.html,https://github.com/mingyuan-zhang/FineMoGen,"LLM, Diffusion, Transformer",Finegrained
+2312.14828,0,,1,PRO-Motion,0,,ECCV,2024,https://moonsliu.github.io/Pro-Motion/,,"CLIP, LLM, Diffusion",
+2312.11538,0,,1,IterativeEditing,0,,SIGGRAPH,2024,https://purvigoel.github.io/iterative-motion-editing/,https://github.com/purvigoel/iterative-editing-release,"Transformer, Diffusion, LLM",Editing
+2312.10993,0,,1,CrossDiff,0,,ECCV,2024,https://wonderno.github.io/CrossDiff-webpage/,https://github.com/wonderNo/crossdiff,Diffusion,
+2312.10960,0,,1,B2A-HDM,0,,AAAI,2024,,,"CLIP, Diffusion",
+2312.08985,0,,1,OMG,0,,CVPR,2024,https://tr3e.github.io/omg-page/,,Diffusion,"Pre-Train, Open-Vocabulary"
+2312.03596,0,,1,MMM,0,,CVPR,2024,https://www.ekkasit.com/MMM-page/,https://github.com/exitudio/MMM/,"Transformer, Diffusion",Editing
+2312.02256,0,,1,EMDM,0,,ECCV,2024,https://frank-zy-dou.github.io/projects/EMDM/index.html,https://github.com/Frank-ZY-Dou/EMDM,"Diffusion, GAN",Efficient
+2312.00063,0,,1,MoMask,0,,CVPR,2024,https://ericguo5513.github.io/momask/,https://github.com/EricGuo5513/momask-codes,"VQ-VAE, Transformer",
+2311.17135,0,,1,TLControl,0,,,,,https://github.com/HiWilliamWWL/TLControl,"VQ-VAE, Transformer",Trajectory
+2311.16471,0,,1,UDE-2,0,,,,https://zixiangzhou916.github.io/UDE-2/,https://github.com/zixiangzhou916/UDE-2,"VQ-VAE, Transformer",
+2311.01015,0,,1,GraphMotion,0,,NeurIPS,2023,,https://github.com/jpthu17/GraphMotion,Transformer,Finegrained
+2310.12978,0,,1,HumanTOMATO,0,,ICML,2024,https://lhchen.top/HumanTOMATO/,https://github.com/IDEA-Research/HumanTOMATO,"VQ-VAE, LLM",Finegrained
+2310.10198,0,,1,MoConVQ,0,,SIGGRAPH,2024,https://moconvq.github.io/,https://github.com/heyuanYao-pku/MoConVQ,"LLM, Transformer","Multi-Task, Physical"
+2310.04189,0,,1,KP,0,,ECCV,2024,https://foruck.github.io/KP/,https://github.com/Foruck/Kinematic-Phrases,,Finegrained
+2309.06284,0,,1,Fg-T2M,0,,ICCV,2023,,,"CLIP, Diffusion",Graph
+2309.00796,0,,1,AttT2M,0,,ICCV,2023,,https://github.com/ZcyMonkey/AttT2M,"VQ-VAE, Transformer",Finegrained
+2308.14480,0,,1,M2DM,0,,ICCV,2023,,,"VQ-VAE, Diffusion, Transformer",
+2308.09611,0,,1,ATOM,0,,MM,2023,,https://github.com/yhZhai/ATOM,"CLIP, Transformer",
+2307.00818,0,,0,,1,Motion-X,NeurIPS,2023,https://motion-x-dataset.github.io/,https://github.com/IDEA-Research/Motion-X,,
+2306.14795,0,,1,MotionGPT,0,,NeurIPS,2023,https://motion-gpt.github.io/,https://github.com/OpenMotionLab/MotionGPT,"LLM, VQ-VAE",
+2306.10900,0,,1,MotionGPT,0,,AAAI,2024,https://qiqiapink.github.io/MotionGPT/,https://github.com/qiqiApink/MotionGPT,"LLM, VQ-VAE",LoRA
+2305.13773,0,,1,DiffKFC,0,,AAAI,2024,,,"CLIP, Transformer",
+2305.12577,0,,1,GMD,0,,ICCV,2023,https://korrawe.github.io/gmd-project/,https://github.com/korrawe/guided-motion-diffusion,Diffusion,Trajectory
+2305.09662,0,,1,MAA,0,,ICCV,2023,https://azadis.github.io/make-an-animation/,,Transformer,
+2305.09381,0,,1,AMD,1,HumanLong3D,AAAI,2024,,https://github.com/fluide1022/AMD,"Transformer, Diffusion",
+2305.00976,0,,1,TMR,0,,ICCV,2023,https://mathis.petrovich.fr/tmr/,https://github.com/Mathux/TMR,,Retrieval
+2304.02419,0,,1,TM2D,0,,ICCV,2023,https://garfield-kh.github.io/TM2D/,https://github.com/Garfield-kh/TM2D,VQ-VAE,Multi-Task
+2304.01116,0,,1,ReMoDiffuse,0,,ICCV,2023,https://mingyuan-zhang.github.io/projects/ReMoDiffuse.html,https://github.com/mingyuan-zhang/ReMoDiffuse,Transformer,Retrieval
+2303.01418,0,,1,priorMDM,0,,ICLR,2024,https://priormdm.github.io/priorMDM-page/,https://github.com/priorMDM/priorMDM,Diffusion,"Finegrained, Trajectory"
+2301.06052,0,,1,T2M-GPT,0,,CVPR,2023,https://mael-zys.github.io/T2M-GPT/,https://github.com/Mael-zys/T2M-GPT,"VQ-VAE, Transformer",
+2301.03949,0,,1,Modiff,0,,,,,,Diffusion,
+2212.05897,0,,1,MultiAct,0,,AAAI,2023,,https://github.com/TaeryungLee/MultiAct_RELEASE,VAE,
+2212.04495,0,,1,MoFusion,0,,CVPR,2023,https://vcai.mpi-inf.mpg.de/projects/MoFusion/,,"UNet, Transformer, Diffusion",
+2212.04048,0,,1,MLD,0,,CVPR,2023,https://chenxin.tech/mld/,https://github.com/chenfengye/motion-latent-diffusion,"VAE, Diffusion",
+2212.02500,0,,1,PhysDiff,0,,ICCV,2023,https://nvlabs.github.io/PhysDiff/,,Diffusion,"Physical, Component"
+2211.16016,0,,1,UDE,0,,CVPR,2023,https://zixiangzhou916.github.io/UDE/,https://github.com/zixiangzhou916/UDE/,"VQ-VAE, Transformer",
+2211.15603,0,,1,Action-GPT,0,,ICME,2023,https://actiongpt.github.io/,https://github.com/actiongpt/actiongpt,"LLM, VAE",
+2210.15929,0,,1,OOHMG,0,,,,,https://github.com/junfanlin/oohmg,"CLIP, Transformer",Open-Vocabulary
+2209.14916,0,,1,MDM,0,,ICLR,2023,https://guytevet.github.io/mdm-page/,https://github.com/GuyTevet/motion-diffusion-model,"CLIP, Transformer, Diffusion",
+2209.04066,0,,1,TEACH,0,,3DV,2022,https://teach.is.tue.mpg.de/,https://github.com/atnikos/teach,Transformer,
+2209.00349,0,,1,FLAME,0,,AAAI,2023,https://kakaobrain.github.io/flame/,https://github.com/kakaobrain/flame,Transformer,Editing
+2208.15001,0,,1,MotionDiffuse,0,,TPAMI,2024,https://mingyuan-zhang.github.io/projects/MotionDiffuse.html,https://github.com/mingyuan-zhang/MotionDiffuse,"Diffusion, Transformer",
+2207.01696,0,,1,TM2T,0,,ECCV,2022,https://ericguo5513.github.io/TM2T/,https://github.com/EricGuo5513/TM2T,GRU,Multi-Task
+2205.08535,0,,1,AvatarCLIP,0,,SIGGRAPH,2022,https://hongfz16.github.io/projects/AvatarCLIP.html,https://github.com/hongfz16/AvatarCLIP,"CLIP, VAE",
+2204.14109,0,,1,TEMOS,0,,ECCV,2022,https://mathis.petrovich.fr/temos/,https://github.com/Mathux/TEMOS,"VAE, Transformer",
+2203.13694,0,,1,ImplicitMotion,0,,ECCV,2022,,https://github.com/PACerv/ImplicitMotion,VAE,
+2203.08063,0,,1,MotionCLIP,0,,ECCV,2022,https://guytevet.github.io/motionclip-page/,https://github.com/GuyTevet/MotionCLIP,"CLIP, Transformer",
+2104.05670,0,,1,ACTOR,0,,ICCV,2021,https://mathis.petrovich.fr/actor/,https://github.com/Mathux/ACTOR,Transformer,
+2007.15240,0,,1,Action2Motion,0,,MM,2020,https://ericguo5513.github.io/action-to-motion/,https://github.com/EricGuo5513/action-to-motion,GRU,
+1607.03827,0,,0,,1,KIT,Big Data,2016,https://motion-annotation.humanoids.kit.edu/dataset/,,,
+2307.10894,1,Survey2307,0,,0,,TPAMI,2023,,,,
+2506.03191,1,Survey2506,0,,0,,,,,,,
+2507.05419,1,Survey2507,0,,0,,,,,,,
+2505.09379,1,Survey2505,0,,0,,,,,,,
