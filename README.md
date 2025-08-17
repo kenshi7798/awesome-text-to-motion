@@ -5,7 +5,10 @@
 <a href='https://zilize.github.io/awesome-text-to-motion/'>
   <img src='https://img.shields.io/badge/Interactive-Charts-%2346a5df?style=flat&logo=plotly&logoColor=white' alt="interactive_charts"/></a>
 <a href='https://github.com/Zilize/awesome-text-to-motion/actions/workflows/static.yml'>
-  <img src='https://img.shields.io/github/actions/workflow/status/zilize/awesome-text-to-motion/static.yml'  alt="workflow"/></a> 
+  <img src='https://img.shields.io/github/actions/workflow/status/zilize/awesome-text-to-motion/static.yml'  alt="workflow"/></a>
+<a href="https://zhuanlan.zhihu.com/p/1940481020941043393">
+  <img src="https://img.shields.io/badge/知乎-文章-%23f5f5f5?style=flat&logo=Zhihu&logoColor=%23188de0" alt="知乎文章"/>
+</a>
 
 
 Text-driven human motion generation surveys, datasets and models, focusing on single-person scenarios without human-object/scene interaction.
