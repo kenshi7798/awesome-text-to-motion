@@ -7,7 +7,6 @@ import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, Di
 import { Button } from '@/components/ui/button';
 import { ExternalLink } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
-import Image from 'next/image';
 import { getGithubStarsShield } from './utils';
 
 interface ItemTableProps {
@@ -16,17 +15,17 @@ interface ItemTableProps {
 
 const ItemTable: React.FC<ItemTableProps> = ({ itemViewList }) => {
     return (
-        <div className="rounded-md border overflow-x-auto">
-            <Table>
+        <div className="rounded-md border overflow-x-auto" style={{ scrollbarWidth: 'thin' }}>
+            <Table className="table-fixed">
                 <TableHeader>
                     <TableRow>
                         <TableHead className="w-[100px] text-center">Publication</TableHead>
-                        <TableHead className="w-[120px]">Abbr.</TableHead>
-                        <TableHead>Title</TableHead>
-                        <TableHead className="w-[100px]">Conference</TableHead>
+                        <TableHead className="w-[160px]">Abbr.</TableHead>
+                        <TableHead className="w-[540px]">Title</TableHead>
+                        <TableHead className="w-[140px]">Conference</TableHead>
                         <TableHead className="w-[50px]">Link</TableHead>
                         <TableHead className="w-[50px]">Page</TableHead>
-                        <TableHead className="w-[100px]">Code</TableHead>
+                        <TableHead className="w-[90px] md:w-[90px] lg:w-[90px]">Code</TableHead>
                         <TableHead className="w-[180px]">Backbone</TableHead>
                         <TableHead className="w-[180px]">Approach</TableHead>
                     </TableRow>
@@ -72,7 +71,7 @@ const ItemTable: React.FC<ItemTableProps> = ({ itemViewList }) => {
                             <TableCell>
                                 {itemView.code && (
                                     <a href={itemView.code} target="_blank" rel="noopener noreferrer" className="flex justify-center items-center">
-                                        <Image src={getGithubStarsShield(itemView.code)} alt="GitHub stars" className="h-5" width={90} height={20} unoptimized />
+                                        <img src={getGithubStarsShield(itemView.code)} alt="GitHub stars" className="h-5 w-auto" />
                                     </a>
                                 )}
                             </TableCell>
