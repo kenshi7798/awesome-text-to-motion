@@ -5,6 +5,7 @@ import { ItemData, ItemType } from '@/components/types';
 import { getTags, getViewFromData } from '@/components/utils';
 import FilterSection from '@/components/filter-section';
 import ItemTable from '@/components/item-table';
+import { Github } from 'lucide-react';
 import './globals.css';
 
 function App() {
@@ -84,6 +85,18 @@ function App() {
     return (
         <div className="container mx-auto p-0 pb-10 space-y-10 max-w-screen-3xl">
             <h1 className="text-6xl font-bold text-center mb-16 mt-16">awesome-text-to-motion</h1>
+            
+            <div className="text-center mb-16">
+                <a 
+                    href="https://github.com/zilize/awesome-text-to-motion" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-lg text-muted-foreground hover:text-foreground transition-colors"
+                >
+                    <Github className="w-6 h-6" />
+                    <span>View on GitHub</span>
+                </a>
+            </div>
 
             <h2 className="text-4xl font-bold text-left">Surveys</h2>
             <ItemTable itemViewList={convertedSurveys} />
