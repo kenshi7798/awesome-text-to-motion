@@ -7,12 +7,6 @@ Text-driven human motion generation surveys, datasets and models, focusing on si
 
 Please refer to the [project page](https://zilize.github.io/awesome-text-to-motion/) for a better browsing experience.
 
-## Contents
-
-- [Surveys](#surveys)
-- [Datasets](#datasets)
-- [Models](#models)
-
 <details>
 <summary><b>Contribution Guide</b> (Click to expand)</summary>
 
@@ -78,6 +72,12 @@ Thank you for contributing to the awesome-text-to-motion collection! 🚀
 ---
 
 </details>
+
+## Contents
+
+- [Surveys](#surveys)
+- [Datasets](#datasets)
+- [Models](#models)
 
 ## Surveys
 

@@ -5,7 +5,8 @@ import { ItemData, ItemType } from '@/components/types';
 import { getTags, getViewFromData } from '@/components/utils';
 import FilterSection from '@/components/filter-section';
 import ItemTable from '@/components/item-table';
-import { Github, HelpCircle, X } from 'lucide-react';
+import { ExternalLink, HelpCircle } from 'lucide-react';
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 import './globals.css';
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
     const [showPublishedOnly, setShowPublishedOnly] = useState(false);
     const [showWithPageOnly, setShowWithPageOnly] = useState(false);
     const [showWithRepoOnly, setShowWithRepoOnly] = useState(false);
-    const [showInfoModal, setShowInfoModal] = useState(false);
+
 
     useEffect(() => {
         setSelectedBackboneTag("All");
@@ -95,77 +96,71 @@ function App() {
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 text-lg text-muted-foreground hover:text-foreground transition-colors"
                     >
-                        <Github className="w-6 h-6" />
+                        <ExternalLink className="w-6 h-6" />
                         <span>View on GitHub</span>
                     </a>
-                    <button
-                        onClick={() => setShowInfoModal(true)}
-                        className="inline-flex items-center gap-2 text-lg text-muted-foreground hover:text-foreground transition-colors"
-                        title="About this collection"
-                    >
-                        <HelpCircle className="w-6 h-6" />
-                    </button>
+                    <Dialog>
+                        <DialogTrigger asChild>
+                            <button className="inline-flex items-center gap-2 text-lg text-muted-foreground hover:text-foreground transition-colors">
+                                <HelpCircle className="w-6 h-6" />
+                                <span>About this collection</span>
+                            </button>
+                        </DialogTrigger>
+                        <DialogContent className="sm:max-w-[800px]">
+                            <DialogHeader>
+                                <DialogTitle>About This Collection</DialogTitle>
+                                <DialogDescription>
+                                    Learn more about this text-to-motion research collection
+                                </DialogDescription>
+                            </DialogHeader>
+                            
+                            <div className="space-y-4 text-gray-700">
+                                <div>
+                                    <h3 className="text-lg font-semibold text-gray-900 mb-2">📚 What's Included</h3>
+                                    <p className="mb-3">
+                                        This collection covers comprehensive research on <strong>text-driven human motion generation</strong>, 
+                                        focusing on single-person scenarios without human-object/scene interaction.
+                                    </p>
+                                    <ul className="list-disc list-inside space-y-1 ml-4">
+                                        <li><strong>Surveys:</strong> Comprehensive reviews and surveys of the field</li>
+                                        <li><strong>Datasets:</strong> Motion datasets for training and evaluation</li>
+                                        <li><strong>Models:</strong> State-of-the-art text-to-motion generation models</li>
+                                    </ul>
+                                </div>
+                                
+                                <div>
+                                    <h3 className="text-lg font-semibold text-gray-900 mb-2">🔍 Key Features</h3>
+                                    <ul className="list-disc list-inside space-y-1 ml-4">
+                                        <li>Papers are categorized by backbone architectures (Transformer, Diffusion, etc.)</li>
+                                        <li>Filter by approach types (Physical, Editing, etc.)</li>
+                                        <li>Sort by publication date (newest first)</li>
+                                        <li>Direct links to project pages and code repositories</li>
+                                    </ul>
+                                </div>
+                                
+                                <div>
+                                    <h3 className="text-lg font-semibold text-gray-900 mb-2">🤝 Contributing</h3>
+                                    <p className="mb-3">
+                                        We welcome contributions to make this collection more comprehensive! 
+                                        Please visit our GitHub repository for detailed contribution guidelines.
+                                    </p>
+                                    <a
+                                        href="https://github.com/zilize/awesome-text-to-motion"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 font-medium transition-colors"
+                                    >
+                                        <ExternalLink className="w-4 h-4" />
+                                        View Contribution Guide
+                                    </a>
+                                </div>
+                            </div>
+                        </DialogContent>
+                    </Dialog>
                 </div>
             </div>
 
-            {/* Info Modal */}
-            {showInfoModal && (
-                <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-                    <div className="bg-white rounded-lg p-8 max-w-2xl mx-4 max-h-[80vh] overflow-y-auto">
-                        <div className="flex justify-between items-start mb-6">
-                            <h2 className="text-2xl font-bold text-gray-900">About This Collection</h2>
-                            <button
-                                onClick={() => setShowInfoModal(false)}
-                                className="text-gray-400 hover:text-gray-600 transition-colors"
-                            >
-                                <X className="w-6 h-6" />
-                            </button>
-                        </div>
-                        
-                        <div className="space-y-4 text-gray-700">
-                            <div>
-                                <h3 className="text-lg font-semibold text-gray-900 mb-2">📚 What&#39;s Included</h3>
-                                <p className="mb-3">
-                                    This collection covers comprehensive research on <strong>text-driven human motion generation</strong>, 
-                                    focusing on single-person scenarios without human-object/scene interaction.
-                                </p>
-                                <ul className="list-disc list-inside space-y-1 ml-4">
-                                    <li><strong>Surveys:</strong> Comprehensive reviews and surveys of the field</li>
-                                    <li><strong>Datasets:</strong> Motion datasets for training and evaluation</li>
-                                    <li><strong>Models:</strong> State-of-the-art text-to-motion generation models</li>
-                                </ul>
-                            </div>
-                            
-                            <div>
-                                <h3 className="text-lg font-semibold text-gray-900 mb-2">🔍 Key Features</h3>
-                                <ul className="list-disc list-inside space-y-1 ml-4">
-                                    <li>Papers are categorized by backbone architectures (Transformer, Diffusion, etc.)</li>
-                                    <li>Filter by approach types (Physical, Editing, etc.)</li>
-                                    <li>Sort by publication date (newest first)</li>
-                                    <li>Direct links to project pages and code repositories</li>
-                                </ul>
-                            </div>
-                            
-                            <div>
-                                <h3 className="text-lg font-semibold text-gray-900 mb-2">🤝 Contributing</h3>
-                                <p className="mb-3">
-                                    We welcome contributions to make this collection more comprehensive! 
-                                    Please visit our GitHub repository for detailed contribution guidelines.
-                                </p>
-                                <a
-                                    href="https://github.com/zilize/awesome-text-to-motion"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 font-medium transition-colors"
-                                >
-                                    <Github className="w-4 h-4" />
-                                    View Contribution Guide
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            )}
+
 
             <h2 className="text-4xl font-bold text-left">Surveys</h2>
             <ItemTable itemViewList={convertedSurveys} />
