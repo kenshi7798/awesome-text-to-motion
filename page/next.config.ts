@@ -9,6 +9,7 @@ const nextConfig: NextConfig = {
         hostname: 'img.shields.io',
       },
     ],
+    unoptimized: true,
   },
   output: "export",
   basePath: process.env.NODE_ENV === 'production' ? '/awesome-text-to-motion' : '',
