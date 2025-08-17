@@ -116,7 +116,7 @@ function App() {
                             
                             <div className="space-y-4 text-gray-700">
                                 <div>
-                                    <h3 className="text-lg font-semibold text-gray-900 mb-2">📚 What's Included</h3>
+                                    <h3 className="text-lg font-semibold text-gray-900 mb-2">📚 What&#39;s Included</h3>
                                     <p className="mb-3">
                                         This collection covers comprehensive research on <strong>text-driven human motion generation</strong>, 
                                         focusing on single-person scenarios without human-object/scene interaction.
