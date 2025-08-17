@@ -7,14 +7,16 @@ Text-driven human motion generation surveys, datasets and models, focusing on si
 
 Please refer to the [project page](https://zilize.github.io/awesome-text-to-motion/) for a better browsing experience.
 
-## 📚 Contents
+## Contents
 
 - [Surveys](#surveys)
 - [Datasets](#datasets)
 - [Models](#models)
 
 <details>
-<summary><b>🤝 Contributing</b> (Click to expand)</summary>
+<summary><b>Contribution Guide</b> (Click to expand)</summary>
+
+---
 
 We welcome contributions to make this repository more comprehensive and up-to-date! 
 
@@ -71,15 +73,9 @@ We welcome contributions to make this repository more comprehensive and up-to-da
 }}
 ```
 
-### Guidelines
+Thank you for contributing to the awesome-text-to-motion collection! 🚀
 
-- **Ensure accuracy**: Verify all information before submitting
-- **Follow format**: Use the exact column names and data types
-- **Be descriptive**: Provide clear and informative tags
-- **Include links**: Add project pages and code repositories when available
-- **Check duplicates**: Avoid adding papers that already exist
-
-Thank you for contributing to the text-to-motion research community! 🚀
+---
 
 </details>
 
