@@ -12,8 +12,8 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   output: "export",
-  basePath: process.env.NODE_ENV === 'production' ? '/awesome-text-to-motion' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/awesome-text-to-motion/' : '',
+  basePath: '/awesome-text-to-motion',
+  assetPrefix: '/awesome-text-to-motion/',
   trailingSlash: true,
 };
 

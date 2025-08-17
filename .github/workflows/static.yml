@@ -44,22 +44,11 @@ jobs:
           ls -la
           echo "Page directory contents:"
           ls -la page/
-          echo "Page src directory contents:"
-          ls -la page/src/
-          echo "Page lib directory contents:"
-          ls -la page/src/lib/
       - name: Install dependencies
         run: |
           cd page
           npm install
           echo "Dependencies installed successfully"
-      - name: Debug - Check TypeScript config
-        run: |
-          cd page
-          echo "TypeScript config:"
-          cat tsconfig.json
-          echo "Package.json:"
-          cat package.json
       - name: Build and Export Next.js
         run: |
           cd page
@@ -69,12 +58,13 @@ jobs:
         run: |
           echo "Build output directory:"
           ls -la page/out/
+          echo "Build output files:"
+          find page/out/ -type f -name "*.html" | head -5
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
           path: './page/out'
       - name: Deploy to GitHub Pages
         id: deployment
