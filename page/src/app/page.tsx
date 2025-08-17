@@ -178,7 +178,7 @@ function App() {
 
             <h2 className="text-4xl font-bold text-left">Models</h2>
             <div className="space-y-8">
-                <div className="flex gap-8">
+                <div className="flex flex-col lg:flex-row gap-4 lg:gap-8">
                     <FilterSection
                         title="Backbone Tag"
                         allTags={allBackboneTags}

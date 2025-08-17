@@ -41,7 +41,7 @@ const ItemTable: React.FC<ItemTableProps> = ({ itemViewList }) => {
                                             {itemView.abbr}
                                         </Button>
                                     </DialogTrigger>
-                                    <DialogContent className="sm:max-w-[800px]">
+                                    <DialogContent className="max-w-[90vw] sm:max-w-[800px] max-h-[90vh] overflow-y-auto">
                                         <DialogHeader>
                                             <DialogTitle>{itemView.title}</DialogTitle>
                                             <DialogDescription>{itemView.authors.join(', ')}</DialogDescription>
