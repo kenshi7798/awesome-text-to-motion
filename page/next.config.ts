@@ -10,7 +10,10 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  output: "export"
+  output: "export",
+  basePath: process.env.NODE_ENV === 'production' ? '/awesome-text-to-motion' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/awesome-text-to-motion/' : '',
+  trailingSlash: true,
 };
 
 export default nextConfig;
