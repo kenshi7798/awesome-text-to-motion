@@ -48,7 +48,7 @@ We welcome contributions to make this repository more comprehensive and up-to-da
 - **File**: `data/without-arxiv.json`
 - **Format**: Add a new JSON object with the following structure:
 ```json
-{
+{{
     "arxiv_id": "random-key-for-your-interest",
     "title": "Paper Title",
     "abstract": "Paper abstract...",
@@ -68,7 +68,7 @@ We welcome contributions to make this repository more comprehensive and up-to-da
     "repo": "https://github.com/user_name/repo",
     "backbone_tags": "Transformer, Diffusion",
     "approach_tags": "Physical, Editing"
-}
+}}
 ```
 
 ### Guidelines
