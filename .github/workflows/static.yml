@@ -43,7 +43,7 @@ jobs:
           mkdir -p page/src/assets
           cp data/data.json page/src/assets/
       - name: Upload generated data
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: generated-data
           path: page/src/assets/data.json
@@ -65,7 +65,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Download generated data
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: generated-data
           path: page/src/assets/
