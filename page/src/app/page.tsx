@@ -5,6 +5,7 @@ import { ItemData, ItemType } from '@/components/types';
 import { getTags, getViewFromData } from '@/components/utils';
 import FilterSection from '@/components/filter-section';
 import ItemTable from '@/components/item-table';
+import Visualization from '@/components/visualization';
 import { ExternalLink, HelpCircle } from 'lucide-react';
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 import './globals.css';
@@ -160,7 +161,8 @@ function App() {
                 </div>
             </div>
 
-
+            {/* D3.js 可视化部分 */}
+            <Visualization data={itemDataList} />
 
             <h2 className="text-4xl font-bold text-left">Surveys</h2>
             <ItemTable itemViewList={convertedSurveys} />
