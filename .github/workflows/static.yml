@@ -2,21 +2,15 @@
 name: Update readme and page
 
 on:
-  # Runs on pushes targeting the default branch
   push:
     branches: ["master"]
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
   group: "pages"
   cancel-in-progress: false
@@ -44,23 +38,37 @@ jobs:
           python export_data.py
           python export_readme.py
           echo "success=true" >> $GITHUB_OUTPUT
-      - name: Create assets directory
+      - name: Prepare assets
         run: |
           mkdir -p page/src/assets
-      - name: Copy data to page assets
-        run: |
           cp data/data.json page/src/assets/
+      - name: Upload generated data
+        uses: actions/upload-artifact@v3
+        with:
+          name: generated-data
+          path: page/src/assets/data.json
+      - name: Commit and push README updates
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add README.md
+          git commit -m "Auto-update README with latest data" || echo "No README changes to commit"
+          git push
 
   # Deploy job
   deploy:
     needs: generate-data
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Download generated data
+        uses: actions/download-artifact@v3
+        with:
+          name: generated-data
+          path: page/src/assets/
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
