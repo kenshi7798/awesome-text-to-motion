@@ -87,9 +87,9 @@ function App() {
 
     return (
         <div className="container mx-auto p-0 pb-10 space-y-10 max-w-screen-3xl">
-            <h1 className="text-6xl font-bold text-center mb-16 mt-16">awesome-text-to-motion</h1>
+            <h1 className="text-6xl font-bold text-center mb-8 mt-20">awesome-text-to-motion</h1>
             
-            <div className="text-center mb-16">
+            <div className="text-center mb-20">
                 <div className="inline-flex items-center gap-4">
                     <a 
                         href="https://github.com/zilize/awesome-text-to-motion" 
@@ -178,18 +178,20 @@ function App() {
 
             <h2 className="text-4xl font-bold text-left">Models</h2>
             <div className="space-y-8">
-                <FilterSection
-                    title="Backbone Tag"
-                    allTags={allBackboneTags}
-                    selectedTag={selectedBackboneTag}
-                    onTagChange={setSelectedBackboneTag}
-                />
-                <FilterSection
-                    title="Approach Tag"
-                    allTags={allApproachTags}
-                    selectedTag={selectedApproachTag}
-                    onTagChange={setSelectedApproachTag}
-                />
+                <div className="flex gap-8">
+                    <FilterSection
+                        title="Backbone Tag"
+                        allTags={allBackboneTags}
+                        selectedTag={selectedBackboneTag}
+                        onTagChange={setSelectedBackboneTag}
+                    />
+                    <FilterSection
+                        title="Approach Tag"
+                        allTags={allApproachTags}
+                        selectedTag={selectedApproachTag}
+                        onTagChange={setSelectedApproachTag}
+                    />
+                </div>
                 <div>
                     <h3 className="text-lg font-semibold mb-2">Filter Options</h3>
                     <div className="flex flex-wrap gap-4">
