@@ -1,5 +1,5 @@
 # Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+name: Update readme and page
 
 on:
   # Runs on pushes targeting the default branch
@@ -22,8 +22,35 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # Single deploy job since we're just deploying
+  # Data generation job
+  generate-data:
+    runs-on: ubuntu-latest
+    outputs:
+      data-generated: ${{ steps.generate.outputs.success }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      - name: Install Python dependencies
+        run: |
+          pip install arxiv
+      - name: Generate data and README
+        id: generate
+        run: |
+          cd scripts
+          python export_data.py
+          python export_readme.py
+          echo "success=true" >> $GITHUB_OUTPUT
+      - name: Copy data to page assets
+        run: |
+          cp data/data.json page/src/assets/
+
+  # Deploy job
   deploy:
+    needs: generate-data
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
