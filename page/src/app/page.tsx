@@ -107,7 +107,7 @@ function App() {
                                 <span>About this collection</span>
                             </button>
                         </DialogTrigger>
-                        <DialogContent className="sm:max-w-[800px]">
+                        <DialogContent className="max-w-[90vw] sm:max-w-[800px] max-h-[90vh] overflow-y-auto">
                             <DialogHeader>
                                 <DialogTitle>About This Collection</DialogTitle>
                                 <DialogDescription>
