@@ -44,6 +44,9 @@ jobs:
           python export_data.py
           python export_readme.py
           echo "success=true" >> $GITHUB_OUTPUT
+      - name: Create assets directory
+        run: |
+          mkdir -p page/src/assets
       - name: Copy data to page assets
         run: |
           cp data/data.json page/src/assets/
